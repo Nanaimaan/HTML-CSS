@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.main_wrapper {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  height: 94px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  background-color: #212529;
+}
+
+.nav__title {
+  font-size: 1.5em;
+  color: #fed136;
+}
+.nav__links {
+  list-style-type: none;
+  display: flex;
+  gap: 35px;
+  text-transform: uppercase;
+  color: white;
+}
+.nav__link:hover {
+  color: #fed136;
+}
+
+.home {
+  width: 100%;
+  height: 745px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: url("https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.home__greeting {
+  font-size: 2.25rem;
+  font-weight: 300;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.home__main {
+  font-size: 4.5rem;
+}
+.home__button {
+  width: 225px;
+  height: 70px;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #fed136;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  margin-top: 40px;
+}
+
+.services {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.services__head {
+  text-align: center;
+}
+.main__head {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.secondary__head {
+  padding: 20px;
+  color: #6c757d;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.services__body {
+  width: 80%;
+
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.services__card {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+.card__img svg {
+  fill: #fed136;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.card__text {
+  line-height: 1.8rem;
+  color: #6c757d;
+}
+
+.portfolio {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-color: #e4e6e7;
+  padding: 100px;
+}
+
+.portfolio__head {
+  text-align: center;
+}
+.portfolio__body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.portfolio__card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.portfolio__img {
+  position: relative;
+}
+.portfolio__img img {
+  width: 100%;
+  height: 70%;
+}
+.portfolio__img:hover .portfolio__hover {
+  opacity: 1;
+}
+.portfolio__img:hover {
+  cursor: pointer;
+}
+.portfolio__hover {
+  width: 100%;
+  height: 100%;
+  background-color: #fed336d7;
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio__hover svg {
+  width: 50%;
+  height: 30%;
+}
+.card__body {
+  height: 120px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.team {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e6e7;
+  gap: 50px;
+  padding: 100px;
+}
+
+.team__head {
+  text-align: center;
+}
+.team__body {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.team__card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.team__card img {
+  width: 60%;
+  height: 30%;
+  border: 10px solid rgb(210, 210, 210);
+  border-radius: 100%;
+}
+
+.team__card_body {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card__links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card__links svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.card__links svg:active {
+  border: 3px solid grey;
+  border-radius: 50%;
+}
+.team__info {
+  margin-top: 6%;
+  width: 70%;
+  text-align: center;
+  color: #6c757d;
+}
+
+.companies {
+  width: 100%;
+  display: flex;
+  height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/map-image.png);
+  background-color: #212529;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  gap: 50px;
+}
+.contact__head {
+  text-align: center;
+}
+.contact__body {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__form {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
+.contact__info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  width: 60%;
+}
+.contact__form input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+.contact__form input {
+  border: 1px solid transparent;
+  padding: 20px;
+  border-radius: 7px;
+}
+.message input {
+  width: 100%;
+  height: 235px;
+}
+
+.contact__button {
+  width: 225px;
+  height: 70px;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #fed136;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  margin-top: 40px;
+}
+.footer__body {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.policy__links a {
+  color: #fed136;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.policy__links a:hover {
+  text-decoration: underline;
+}
